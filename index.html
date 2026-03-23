@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+<!-- SEO Meta Tags -->
+<title>Chatbot King LIVE — Claude MCP vs OpenClaw YouTube Event</title>
+<meta name="description" content="Rebuilt Chatbot King LIVE landing page for the March 22, 2026 YouTube event with countdown, anthem player, playbook offer, donations, and community support." />
+<meta property="og:title" content="Chatbot King LIVE — Claude MCP vs OpenClaw YouTube Event" />
+<meta property="og:description" content="Rebuilt Chatbot King LIVE landing page for the March 22, 2026 YouTube event with countdown, anthem player, playbook offer, donations, and community support." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Chatbot King LIVE — Claude MCP vs OpenClaw YouTube Event" />
+<meta name="twitter:description" content="Rebuilt Chatbot King LIVE landing page for the March 22, 2026 YouTube event with countdown, anthem player, playbook offer, donations, and community support." />
+<!-- End SEO Meta Tags -->
+
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-x-hidden">
+  <audio id="anthem" src="https://paymegpt.com/objects/generated-audio/1774183528641-d6dae24afbfaba7b.mp3" autoplay muted loop></audio>
+
+  <div class="fixed inset-0 pointer-events-none">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#36D6B5]/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-24 -right-24 w-[30rem] h-[30rem] bg-[#FFD700]/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[42rem] h-[16rem] bg-[#FF2D2D]/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <header class="sticky top-0 z-50 glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#36D6B5] to-[#FFD700] grid place-items-center text-black font-black">CK</div>
+        <div>
+          <div class="text-lg md:text-2xl tracking-[.22em] font-bold">CHATBOT KING LIVE</div>
+          <div class="text-[10px] md:text-xs tracking-[.32em] text-white/60">CLAUDE MCP VS OPENCLAW</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-3 text-sm tracking-[.22em]">
+        <span class="px-3 py-1 rounded-full bg-[#FF2D2D] pulse-live font-bold">LIVE</span>
+        <a href="#playbook" class="hover:text-[#36D6B5]">PLAYBOOK</a>
+        <a href="#support" class="hover:text-[#36D6B5]">SUPPORT</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative pt-10 pb-20 md:pt-16 md:pb-28">
+      <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass border border-[#36D6B5]/20 mb-6">
+            <span class="w-3 h-3 rounded-full bg-[#FF2D2D] pulse-live"></span>
+            <span class="tracking-[.28em] text-xs md:text-sm">TONIGHT AT 10PM EST ON YOUTUBE</span>
+          </div>
+          <h1 class="text-5xl sm:text-6xl md:text-8xl leading-[.9] font-black tracking-[.08em] glow-teal">CHATBOT KING<br><span class="text-[#FFD700] glow-gold">LIVE</span></h1>
+          <p class="mt-5 text-xl md:text-3xl tracking-[.1em] text-white/90">Claude MCP vs OpenClaw</p>
+          <p class="mt-4 max-w-xl text-white/70 text-base md:text-lg leading-relaxed">The arena is set. We’re building live, pushing MCP to the edge, and putting the OpenClaw challenge under the spotlight.</p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://youtube.com/@ChatbotBuilderAI" target="_blank" class="px-6 py-4 rounded-2xl bg-[#FF2D2D] hover:bg-red-500 transition font-bold tracking-[.2em] shadow-lg shadow-red-500/20">WATCH ON YOUTUBE</a>
+            <button id="unmuteBtn" class="px-6 py-4 rounded-2xl bg-gradient-to-r from-[#36D6B5] to-[#FFD700] text-black font-black tracking-[.16em]">🔊 UNMUTE THE ANTHEM</button>
+          </div>
+
+          <div class="mt-8 glass rounded-3xl p-5 md:p-6 max-w-xl">
+            <div class="text-sm tracking-[.28em] text-[#36D6B5] mb-2">COUNTDOWN TO GO LIVE</div>
+            <div id="countdown" class="grid grid-cols-4 gap-3 text-center">
+              <div class="rounded-2xl bg-black/40 border border-white/10 p-3"><div id="d" class="text-3xl md:text-4xl font-bold text-[#FFD700]">--</div><div class="text-[10px] tracking-[.3em] text-white/60">DAYS</div></div>
+              <div class="rounded-2xl bg-black/40 border border-white/10 p-3"><div id="h" class="text-3xl md:text-4xl font-bold text-[#36D6B5]">--</div><div class="text-[10px] tracking-[.3em] text-white/60">HRS</div></div>
+              <div class="rounded-2xl bg-black/40 border border-white/10 p-3"><div id="m" class="text-3xl md:text-4xl font-bold text-[#FFD700]">--</div><div class="text-[10px] tracking-[.3em] text-white/60">MIN</div></div>
+              <div class="rounded-2xl bg-black/40 border border-white/10 p-3"><div id="s" class="text-3xl md:text-4xl font-bold text-[#FF2D2D]">--</div><div class="text-[10px] tracking-[.3em] text-white/60">SEC</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-[#36D6B5]/10 via-transparent to-[#FFD700]/10 blur-2xl"></div>
+          <div class="relative glass rounded-[2rem] p-4 md:p-6 border-white/10">
+            <div class="aspect-[4/5] rounded-[1.5rem] overflow-hidden border border-white/10 bg-black/50">
+              <img src="https://paymegpt.com/objects/generated-images/2/1774183866971-d0aba920e6461d98.png" alt="Chatbot King LIVE" class="w-full h-full object-cover"/>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <div>
+                <div class="text-[#36D6B5] tracking-[.24em] text-xs">SPECIAL EVENT</div>
+                <div class="text-2xl md:text-3xl tracking-[.12em]">AI WAR ROOM. LIVE.</div>
+              </div>
+              <div class="eq flex items-end h-8"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 md:py-20 border-y border-white/10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+          <div class="glass rounded-3xl p-6"><div class="text-[#36D6B5] text-sm tracking-[.3em]">WHAT TO EXPECT</div><div class="mt-2 text-2xl tracking-[.12em]">Claude + PayMeGPT MCP</div><p class="mt-3 text-white/70">Live orchestration, agent routing, and real builds with the stack that powers the show.</p></div>
+          <div class="glass rounded-3xl p-6"><div class="text-[#FFD700] text-sm tracking-[.3em]">60+ TOOLS</div><div class="mt-2 text-2xl tracking-[.12em]">Everything on Deck</div><p class="mt-3 text-white/70">Automation, prompts, workflows, integrations, and hands-on demos that move fast.</p></div>
+          <div class="glass rounded-3xl p-6"><div class="text-[#FF2D2D] text-sm tracking-[.3em]">LIVE BUILD</div><div class="mt-2 text-2xl tracking-[.12em]">No Rehearsal</div><p class="mt-3 text-white/70">We’ll build, debug, and ship in front of the audience. The chaos is the content.</p></div>
+          <div class="glass rounded-3xl p-6"><div class="text-[#36D6B5] text-sm tracking-[.3em]">OPENCLAW</div><div class="mt-2 text-2xl tracking-[.12em]">Challenge Accepted</div><p class="mt-3 text-white/70">The name on everybody’s mind. We’re bringing receipts and results.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playbook" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <div class="text-[#FFD700] tracking-[.35em] text-sm">GRAB THE PLAYBOOK 📖</div>
+          <h2 class="mt-3 text-4xl md:text-6xl font-black tracking-[.12em]">THE PROMPT PLAYBOOK: OpenAI Edition</h2>
+          <p class="mt-3 text-xl md:text-2xl text-[#36D6B5] tracking-[.08em]">Master OpenAI Prompting. Build Smarter. Close More.</p>
+        </div>
+        <div class="grid lg:grid-cols-[340px_1fr] gap-8 items-center">
+          <div class="glass rounded-3xl p-4 md:p-6">
+            <img src="https://paymegpt.com/objects/generated-images/2/1774183866971-d0aba920e6461d98.png" alt="Playbook cover" class="w-full rounded-2xl border border-white/10"/>
+          </div>
+          <div class="glass rounded-3xl p-6 md:p-8">
+            <p class="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl">The exact prompting frameworks the Chatbot King uses to build AI-powered businesses. No fluff. Just heat. 50+ prompts, real examples, and strategies that actually work.</p>
+            <div class="grid md:grid-cols-2 gap-3 mt-6 text-lg">
+              <div class="flex gap-3 items-start"><span class="text-[#36D6B5]">✓</span><span>50+ battle-tested prompts</span></div>
+              <div class="flex gap-3 items-start"><span class="text-[#36D6B5]">✓</span><span>OpenAI GPT-4o optimized</span></div>
+              <div class="flex gap-3 items-start"><span class="text-[#36D6B5]">✓</span><span>Build chatbots, flows & automations faster</span></div>
+              <div class="flex gap-3 items-start"><span class="text-[#36D6B5]">✓</span><span>Used live on stream tonight</span></div>
+              <div class="flex gap-3 items-start"><span class="text-[#36D6B5]">✓</span><span>Instant digital download</span></div>
+            </div>
+            <div class="mt-8 flex items-end gap-4 flex-wrap">
+              <div class="text-2xl text-white/50 line-through">~~$49~~</div>
+              <div class="text-6xl md:text-7xl font-black text-[#36D6B5]">$29</div>
+              <div class="text-[#FF2D2D] tracking-[.3em] text-sm mb-3">TODAY ONLY</div>
+            </div>
+            <button id="buyPlaybook" class="mt-6 px-7 py-4 rounded-2xl bg-gradient-to-r from-[#FF2D2D] via-[#FFD700] to-[#36D6B5] text-black font-black tracking-[.18em] shadow-lg shadow-[#FFD700]/10">🔥 GET THE PLAYBOOK — $29</button>
+            <div class="mt-4 text-sm tracking-[.22em] text-white/60">Live stream special pricing. Gone after tonight.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 md:py-20 border-y border-white/10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-5 items-stretch">
+          <div class="glass rounded-3xl p-6 md:p-8 md:col-span-2">
+            <div class="text-[#36D6B5] tracking-[.32em] text-sm">CBB NATION</div>
+            <h3 class="mt-2 text-4xl md:text-5xl tracking-[.1em]">600+ BUILDERS STRONG</h3>
+            <p class="mt-3 text-white/75 text-lg leading-relaxed">A community of builders, operators, and AI tacticians showing up for the live drop, sharing wins, and leveling up together.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10">AI builders</span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10">Automation nerds</span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10">Live stream crew</span>
+            </div>
+          </div>
+          <div class="glass rounded-3xl p-6 md:p-8 flex flex-col justify-center">
+            <div class="text-5xl font-black text-[#FFD700]">600+</div>
+            <div class="mt-2 text-2xl tracking-[.16em]">builders watching</div>
+            <div class="mt-3 text-white/70">This is where the CBB Nation shows up and shows out.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <div class="text-[#FFD700] tracking-[.32em] text-sm">SUPPORT THE STREAM 👑</div>
+          <h2 class="mt-3 text-4xl md:text-6xl font-black tracking-[.12em]">FREE CONTENT TAKES FUEL</h2>
+          <p class="mt-3 text-xl md:text-2xl text-white/75">If you get value, drop some love.</p>
+          <div id="donationStatus" class="mt-4 text-[#36D6B5] tracking-[.24em] text-sm min-h-[1.5rem]"></div>
+        </div>
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5" id="donationPresets"></div>
+      </div>
+    </section>
+
+    <section class="py-14 md:py-20 border-t border-white/10">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="text-[#36D6B5] tracking-[.3em] text-sm">TESTIMONIALS</div>
+        <h3 class="mt-2 text-4xl md:text-5xl tracking-[.1em]">BUILDER ENERGY IS REAL</h3>
+        <div class="grid md:grid-cols-3 gap-4 mt-8">
+          <div class="glass rounded-3xl p-5 text-left"><p class="text-white/80">“The fastest live AI build I’ve seen.”</p><div class="mt-4 text-[#FFD700] tracking-[.22em] text-sm">— CBB NATION</div></div>
+          <div class="glass rounded-3xl p-5 text-left"><p class="text-white/80">“MCP + prompts + execution? Absolute heat.”</p><div class="mt-4 text-[#FFD700] tracking-[.22em] text-sm">— LIVE CHAT</div></div>
+          <div class="glass rounded-3xl p-5 text-left"><p class="text-white/80">“OpenClaw’s about to feel the pressure.”</p><div class="mt-4 text-[#FFD700] tracking-[.22em] text-sm">— THE AUDIENCE</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 md:py-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center">
+          <div class="text-[#FF2D2D] tracking-[.3em] text-sm">FAQ</div>
+          <h3 class="mt-2 text-4xl md:text-5xl tracking-[.1em]">QUESTIONS? WE GOT YOU.</h3>
+        </div>
+        <div class="mt-8 grid gap-4">
+          <div class="glass rounded-2xl p-5"><div class="text-xl tracking-[.14em]">What time is the stream?</div><p class="mt-2 text-white/70">Tonight at 10PM EST on YouTube.</p></div>
+          <div class="glass rounded-2xl p-5"><div class="text-xl tracking-[.14em]">Where do I watch?</div><p class="mt-2 text-white/70">On the ChatbotBuilderAI YouTube channel.</p></div>
+          <div class="glass rounded-2xl p-5"><div class="text-xl tracking-[.14em]">Is the anthem autoplaying?</div><p class="mt-2 text-white/70">Yes, muted on load. Hit unmute to turn it up.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 md:py-20 border-t border-white/10">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="glass rounded-[2rem] p-6 md:p-8">
+          <div class="text-[#36D6B5] tracking-[.3em] text-sm">CONTACT</div>
+          <h3 class="mt-2 text-4xl md:text-5xl tracking-[.1em]">GET IN THE BUILD ZONE</h3>
+          <form class="mt-6 grid md:grid-cols-2 gap-4">
+            <input class="bg-black/40 border border-white/10 rounded-2xl px-4 py-4 outline-none focus:border-[#36D6B5]" placeholder="Name" />
+            <input class="bg-black/40 border border-white/10 rounded-2xl px-4 py-4 outline-none focus:border-[#36D6B5]" placeholder="Email" />
+            <textarea class="md:col-span-2 bg-black/40 border border-white/10 rounded-2xl px-4 py-4 outline-none focus:border-[#36D6B5] min-h-32" placeholder="Message"></textarea>
+            <button type="button" class="md:col-span-2 px-6 py-4 rounded-2xl bg-[#36D6B5] text-black font-black tracking-[.18em]">SEND THE SIGNAL</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-4 items-center justify-between text-white/70">
+      <a href="https://paymegpt.com" target="_blank" class="hover:text-[#36D6B5]">paymegpt.com</a>
+      <div class="tracking-[.18em]">Powered by PayMeGPT MCP</div>
+      <div class="tracking-[.18em]">© 2026 BaggottsBots LLC</div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 glass border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
+      <button id="musicToggle" class="w-11 h-11 rounded-full bg-[#36D6B5] text-black font-black">▶</button>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-center gap-3">
+          <div class="font-bold tracking-[.18em] truncate">Chatbot King Anthem</div>
+          <div class="eq flex items-end h-6"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="text-[10px] tracking-[.3em] text-white/50">STICKY PLAYER</div>
+      </div>
+      <button id="muteToggle" class="px-4 py-2 rounded-full bg-[#FFD700] text-black font-black tracking-[.16em]">UNMUTE</button>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
